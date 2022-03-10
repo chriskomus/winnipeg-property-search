@@ -8,4 +8,6 @@ A simple JavaScript web app that uses Google Street View Static API and The City
 
 Using The City of Winnipeg's Socrata Open Data API, a user can pull property value information as well as neighborhood, square footage, build year, number of rooms, and the zoning type. It also displays whether there is a garage, basement (finished or non-finished), central air, fireplace or an inground pool.
 
-Mouse over the address to see the Google Street View image of the address.
+## Google Street View Static API
+
+Mouse over the address to see the Google Street View image of the address. You'll need your own API key.
