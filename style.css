@@ -1,0 +1,192 @@
+/*
+    Assignment 4 - CSS
+    Name: Chris Komus
+    Date: 2/09/22
+*/
+html {
+  background: #2ec4b6;
+}
+
+body {
+  background: #fdfffc;
+  color: #011627;
+  font-family: 'Rubik', sans-serif;
+  width: 80%;
+  min-height: 100vh;
+  box-shadow: 0 0.1em 0.5em #555;
+  padding: 20px 50px;
+  margin: 0px auto;
+}
+
+form {
+  position: relative;
+  width: 100%;
+  display: flex;
+}
+
+input, button {
+    font-family: 'Adamina', serif;
+    font-size: 1.2em;
+}
+
+h1 {
+  font-family: 'Adamina', serif;
+}
+
+.item h2, h3, h4 {
+  font-family: 'Adamina', serif;
+}
+
+hr {
+    overflow: visible;
+    padding: 0;
+    border: none;
+    border-bottom: 1px dotted #011627;
+    color: #011627;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+#address-input {
+  width: 100%;
+  border: 3px solid #2ec4b6;
+  border-right: none;
+  padding: 5px;
+  height: 20px;
+  border-radius: 5px 0 0 5px;
+  outline: none;
+  color: #aaa;
+}
+
+#address-input:focus{
+  color: #000;
+}
+
+#submit {
+  width: 40px;
+  height: 36px;
+  border: 1px solid #2ec4b6;
+  background: #2ec4b6;
+  text-align: center;
+  color: #fff;
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+  font-size: 20px;
+  box-shadow: 0 0px 0 0 #000;
+}
+
+#submit:active {
+  background: #e71d36;
+  border: 1px solid #e71d36;
+}
+
+.container {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  gap: 20px 20px;
+}
+
+.item {
+	width: 25em;
+  box-sizing: border-box;
+  background: #eee;
+  padding: 20px 20px;
+  border-radius: 20px;
+}
+
+.item .blob {
+  display: inline-block;
+  background: #e71d36;
+  padding: 5px 15px 5px 15px;
+  margin-bottom: 5px;
+  margin-right: 5px;
+  border-radius: 10px;
+  color: #eee;
+}
+
+.item .blob-orange {
+  background: #ff9f1c;
+}
+
+.show {
+  opacity: 1;
+  transition: opacity 800ms;
+}
+
+.hide {
+  opacity: 0;
+  transition: opacity 400ms;
+}
+
+.tooltip {
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted #011627;
+}
+
+.no-underline {
+  border-bottom: none;
+}
+
+.tooltip .tooltip-text {
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 400ms;
+  min-width: 120px;
+  background-color: #011627;
+  font-family: 'Rubik', sans-serif;
+  font-weight: 400;
+  font-size: 0.7em;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1;
+  top: -5px;
+  left: 110%;
+}
+
+.tooltip .thumbnail {
+  width: 210px;
+  left: 10%;
+}
+
+.tooltip .thumbnail-load {
+  position: absolute;
+  z-index: -1;
+  top: 10px;
+  left: 10px;
+}
+
+.tooltip .tooltip-text img {
+  border-radius: 6px;
+  z-index: 50;
+}
+
+.tooltip:hover .tooltip-text {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: 100%;
+  margin-top: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: transparent #011627 transparent transparent;
+  opacity: 0.8;
+  transition: opacity 800ms;
+}
+
+.tooltip:hover .tooltip-text {
+  visibility: visible;
+  opacity: 0.8;
+  transition: opacity 400ms;
+}
+
+.tooltip:hover .thumbnail {
+  visibility: visible;
+  opacity: 1;
+  transition: opacity 400ms;
+}
