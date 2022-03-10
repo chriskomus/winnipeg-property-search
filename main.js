@@ -145,7 +145,7 @@ function searchForAddress() {
           let apiMapUrl = 'https://maps.googleapis.com/maps/api/streetview?' +
                           `location='%${fullAddress + 'Winnipeg, MB, Canada'}%'` +
                           '&size=200x200&fov=80&heading=70&pitch=0&' +
-                          `key=AIzaSyBb-qYolb69COgWHwhnpRwRiDA4Kxp-3Zo`;
+                          `key=`;
           let encodedMapURL = encodeURI(apiMapUrl);
           document.getElementById('tooltip-thumbnail-' + [i]).addEventListener('mouseenter', function(e) {
             if (!this.getElementsByTagName("img")[0]) {
