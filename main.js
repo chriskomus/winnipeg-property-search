@@ -145,16 +145,15 @@ function searchForAddress() {
           let apiMapUrl = 'https://maps.googleapis.com/maps/api/streetview?' +
                           `location='%${fullAddress + 'Winnipeg, MB, Canada'}%'` +
                           '&size=200x200&fov=80&heading=70&pitch=0&' +
-                          `key=`;
+                          `key=AIzaSyBb-qYolb69COgWHwhnpRwRiDA4Kxp-3Zo`;
           let encodedMapURL = encodeURI(apiMapUrl);
-          // Uncomment this to enable the Street View tooltip thumbnail.
-          // document.getElementById('tooltip-thumbnail-' + [i]).addEventListener('mouseenter', function(e) {
-          //   if (!this.getElementsByTagName("img")[0]) {
-          //       let newImage = document.createElement('img');
-          //       newImage.src = encodedMapURL;
-          //       this.getElementsByTagName("span")[0].appendChild(newImage);
-          //   }
-          // });
+          document.getElementById('tooltip-thumbnail-' + [i]).addEventListener('mouseenter', function(e) {
+            if (!this.getElementsByTagName("img")[0]) {
+                let newImage = document.createElement('img');
+                newImage.src = encodedMapURL;
+                this.getElementsByTagName("span")[0].appendChild(newImage);
+            }
+          });
         }
       }
       else {
