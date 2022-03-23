@@ -1,5 +1,7 @@
 # Winnipeg Property Search
 
+[See it in action - launch Winnipeg Property Search](https://chriskomus.github.io/winnipeg-property-search/)
+
 ## Property information from The Assessment and Taxation Department of Winnipeg.
 
 Search for a complete or partial address, or search an entire street.
