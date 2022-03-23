@@ -147,13 +147,14 @@ function searchForAddress() {
                           '&size=200x200&fov=80&heading=70&pitch=0&' +
                           `key=`;
           let encodedMapURL = encodeURI(apiMapUrl);
-          document.getElementById('tooltip-thumbnail-' + [i]).addEventListener('mouseenter', function(e) {
-            if (!this.getElementsByTagName("img")[0]) {
-                let newImage = document.createElement('img');
-                newImage.src = encodedMapURL;
-                this.getElementsByTagName("span")[0].appendChild(newImage);
-            }
-          });
+          // Uncomment this to enable the Street View tooltip thumbnail.
+          // document.getElementById('tooltip-thumbnail-' + [i]).addEventListener('mouseenter', function(e) {
+          //   if (!this.getElementsByTagName("img")[0]) {
+          //       let newImage = document.createElement('img');
+          //       newImage.src = encodedMapURL;
+          //       this.getElementsByTagName("span")[0].appendChild(newImage);
+          //   }
+          // });
         }
       }
       else {
